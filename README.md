@@ -1,2 +1,4 @@
 # DataStructureAndAlgorithm
-Small algorithm problems 
+Small algorithm problems
+
+1 String pattern matching 
