@@ -1,25 +1,10 @@
-// this is solution using brute force (O(nm), no proprocessing)
-class Solution {
-public:
-    int strStr(string haystack, string needle) {
-        for( int i = 0; ; i++ ){
-            for( int j = 0; ; j++ ){
-                if( j == needle.size() ) 
-                    return i;
-                if ( i + j == haystack.size() )
-                    return -1;
-                if ( haystack[i+j] != needle[j] )
-                    break;
-            }
-        }
-    }
-};
+#include <iostream>
+#include <string> 
+using namespace std;
 
-// this is the solution using Rabin Karp algorithm
 
-class Solution {
-public:
-    int strStr(string haystack, string needle) {
+int strStr(string haystack, string needle) 
+{
         // using the Rabin-Karp algorithm 
         // 1. compute the hash feature of pattern (needle) 
         // 2. check the hash feature of each substring of haystack
@@ -55,5 +40,15 @@ public:
                 t += MODULUS;
        }
         return -1;
-    }
-};
+}
+
+int main()
+{
+    string haystack("hello");
+    string needle("ll");
+    int shift = strStr(haystack,needle);
+
+    cout<<"haystack is "<<haystack<<" and needle is "<<needle<<endl;
+    cout<<" The first valid shift is "<< shift << endl;
+
+}
