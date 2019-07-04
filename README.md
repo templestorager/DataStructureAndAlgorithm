@@ -20,6 +20,13 @@ Small algorithm problems
 15.  Special Binary String 
 16.  Valid Parenthesis String
 17.  Merge K Sorted Lists
+18.  Pascal's Triangle
+19.  Pascal's Triangle II
+20.  Trapping Rain Water
+21.  Trapping Rain Water II
+
+
+Longest Paralindr (5)
 
 
 string match: finit autonomata, KMP
