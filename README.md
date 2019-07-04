@@ -24,6 +24,7 @@ Small algorithm problems
 19.  Pascal's Triangle II
 20.  Trapping Rain Water
 21.  Trapping Rain Water II
+22.  Increasing Triplet Subsequence
 
 
 Longest Paralindr (5)
