@@ -3,8 +3,8 @@
  *
  * Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
  * Note that the row index starts from 0.
+ *  O(k), O(k)
  */
-// O(k), O(k)
 class Solution {
 public:
     vector<int> getRow(int rowIndex) {
