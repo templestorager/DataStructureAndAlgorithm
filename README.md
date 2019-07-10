@@ -31,6 +31,9 @@ Small algorithm problems
 26.  Best Time to Buy and Sell Stock IV
 27.  Best Time to Buy and Sell Stock with Cooldown
 28.  Min Stack 
+29.  Jewels and Stones
+30.  Merge Two Binary Trees
+31.  Reverse Linked List
 
  Longest Increasing Subsequence
  Remove Invalid Parentheses

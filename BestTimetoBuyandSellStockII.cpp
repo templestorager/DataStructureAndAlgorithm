@@ -60,7 +60,7 @@ public:
 };
 
 
-// This solution is based on the intuition that we can do every transcation on each pair of 
+// This solution is based on the intuition that we can do every transaction on each pair of 
 // valley and peak, since we are not limited by the number of transactions. 
 // O(n), O(1)
 class Solution {
