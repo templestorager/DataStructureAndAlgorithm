@@ -25,9 +25,25 @@ Small algorithm problems
 20.  Trapping Rain Water
 21.  Trapping Rain Water II
 22.  Increasing Triplet Subsequence
+23.  Best Time to Buy and Sell Stock
+24.  Best Time to Buy and Sell Stock II
+25.  Best Time to Buy and Sell Stock III
+26.  Best Time to Buy and Sell Stock IV
+27.  Best Time to Buy and Sell Stock with Cooldown
+28.  Min Stack 
 
+ Longest Increasing Subsequence
+ Remove Invalid Parentheses
+
+a. Easy ones 
+b. Sorting, linked list 
+c. System design 
+d. binary tree problem
 
 Longest Paralindr (5)
+
+1028 Recover a Tree From Preorder Traversal (https://www.cnblogs.com/grandyang/p/11149132.html)
+878, the nth magical number 
 
 
 string match: finit autonomata, KMP
