@@ -34,6 +34,22 @@ Small algorithm problems
 29.  Jewels and Stones
 30.  Merge Two Binary Trees
 31.  Reverse Linked List
+32.  Valid Anagram 
+33.  Find All Anagrams in a String
+34.  First Unique Character in a String
+35.  Min Cost Climbing Stairs
+36.  Lowest Common Ancestor of a Binary Search Tree
+37.  Lowest Common Ancestor of a Binary Tree
+38.  Linked List Cycle
+39.  Palindrome Linked List
+40.  Intersection of Two Linked Lists
+41.  Rotate Array
+42.  Count Primes
+
+
+binary traversal 
+
+
 
  Longest Increasing Subsequence
  Remove Invalid Parentheses
@@ -55,4 +71,25 @@ Topological sorting and generally sorting https://www.geeksforgeeks.org/topologi
 
 Word Ladder
 Word Ladder II
+Word break
+topological sort 
+
+https://www.geeksforgeeks.org/dice-throw-dp-30/
+
+system design problems 
+https://leetcode.com/problems/course-schedule-ii
+https://leetcode.com/problems/binary-tree-maximum-path-sum/
+https://leetcode.com/problems/alien-dictionary/
+https://leetcode.com/problems/rotate-image/
+
+https://leetcode.com/discuss/interview-experience/330931/Amazon-or-SDE2-or-Hyderabad-Reject
+Least number of ones in a sorted matrix - a variation of https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/
+Deserialize from pre-order and inorder - similar to - https://leetcode.com/problems/serialize-and-deserialize-bst/discuss/93168/Deserialize-from-preorder-and-computed-inorder-reusing-old-solution/97648
+Zero to One array change, Conway game in 1D - variation of https://leetcode.com/problems/game-of-life/
+ATM LLD (paid, requires subscription) - https://www.educative.io/collection/page/5668639101419520/5692201761767424/5703128158568448
+
+References: 
+https://www.youtube.com/channel/UCKvwPt6BifPP54yzH99ff1g
+https://github.com/kdn251/interviews
+
 
