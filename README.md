@@ -45,17 +45,38 @@ Small algorithm problems
 40.  Intersection of Two Linked Lists
 41.  Rotate Array
 42.  Count Primes
-
+43.  Ugly Number
+44.  Ugly Number II
+45.  Super Ugly Number
+46.  Encode and Decode TinyURL
+47.  Product of Array Except Self
+48.  Convert BST to Greater Tree
+49.  Subsets
+50.  Subset II 
+51.  Rotate Image
+52.  Binary Tree Level Order Traversal
+53.  Kth Largest Element in an Array
+54.  Number of Islands
+55.  Binary Tree Right Side View
+56.  Delete Node in a BST
+57.  Serialize and Deserialize BST
+58.  Gray Code
+59.  Set Matrix Zeroes
+60.  Word Break
 
 binary traversal 
+topological sort 
+system design 
+Word Ladder
+Word Ladder II
+Word break
 
 
-
- Longest Increasing Subsequence
+Longest Increasing Subsequence
  Remove Invalid Parentheses
 
-a. Easy ones 
 b. Sorting, linked list 
+https://wdxtub.com/interview/14520597162931.html
 c. System design 
 d. binary tree problem
 
@@ -72,7 +93,7 @@ Topological sorting and generally sorting https://www.geeksforgeeks.org/topologi
 Word Ladder
 Word Ladder II
 Word break
-topological sort 
+
 
 https://www.geeksforgeeks.org/dice-throw-dp-30/
 

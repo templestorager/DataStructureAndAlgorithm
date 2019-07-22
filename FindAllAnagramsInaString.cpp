@@ -30,7 +30,7 @@
  */
 
 // This solution is brute force apporach. 
-// It check every possible start index in the s and check whether it is an anagram from there. 
+// It checks every possible start index in the s and check whether it is an anagram from there. 
 // O(m*n*lgn), O(1)
 // Note: it leads to Time Limit Exceeded. 
 class Solution {
