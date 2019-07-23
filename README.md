@@ -63,9 +63,18 @@ Small algorithm problems
 58.  Gray Code
 59.  Set Matrix Zeroes
 60.  Word Break
+61.  Word Break II
+62.  Single Number
+63.  Missing Number
+64.  Nth Magical Number
+65.  Find the Duplicate Number
+66.  Linked List Cycle II
+67.  Find All Duplicates in an Array
 
 binary traversal 
 topological sort 
+radix sorting 
+KMP 
 system design 
 Word Ladder
 Word Ladder II
@@ -89,10 +98,6 @@ Longest Paralindr (5)
 string match: finit autonomata, KMP
 Manacher's algorithm 
 Topological sorting and generally sorting https://www.geeksforgeeks.org/topological-sorting/
-
-Word Ladder
-Word Ladder II
-Word break
 
 
 https://www.geeksforgeeks.org/dice-throw-dp-30/
