@@ -71,7 +71,7 @@ public:
     }
 };
 
-// This is BFS-base method 
+// This is a BFS-base method 
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {

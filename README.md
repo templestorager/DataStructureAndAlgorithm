@@ -60,7 +60,7 @@ Small algorithm problems
 55.  Binary Tree Right Side View
 56.  Delete Node in a BST
 57.  Serialize and Deserialize BST
-58.  Gray Code
+58.  Gray Code            ***************************************
 59.  Set Matrix Zeroes
 60.  Word Break
 61.  Word Break II
@@ -70,15 +70,23 @@ Small algorithm problems
 65.  Find the Duplicate Number
 66.  Linked List Cycle II
 67.  Find All Duplicates in an Array
+68.  Find All Numbers Disappeared in an Array
+69.  Single Number II
+70.  Sort Array By Parity
+71.  Remove Vowels from a String
+72.  To Lower Case
+73.  Merge Sorted Array
+74.  Self Dividing Numbers
+75.  Perfect Number
+
+71.  Word Ladder   ******************************************
+72.  Word Ladder II ******************************************
 
 binary traversal 
 topological sort 
 radix sorting 
 KMP 
 system design 
-Word Ladder
-Word Ladder II
-Word break
 
 
 Longest Increasing Subsequence
