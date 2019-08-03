@@ -78,6 +78,28 @@ Small algorithm problems
 73.  Merge Sorted Array
 74.  Self Dividing Numbers
 75.  Perfect Number
+76.  Reverse String
+77.  Reverse String II
+78.  Reverse Words in a String II
+79.  Reverse Words in a String III
+80.  Armstrong Number
+81.  Find Anagram Mappings
+82.  Defanging an IP Address
+83.  Product Sales Analysis I
+84.  Product Sales Analysis II
+85.  Product Sales Analysis III
+86.  Fixed Point
+87.  Range Sum of BST
+88.  Game Play Analysis I
+89.  Game Play Analysis II
+90.  Game Play Analysis III
+91.  Game Play Analysis IV
+92.  Game Play Analysis V
+93.  Remove Outermost Parentheses
+94.  Unique Morse Code Words
+95.  High Five
+
+
 
 71.  Word Ladder   ******************************************
 72.  Word Ladder II ******************************************
@@ -125,5 +147,7 @@ ATM LLD (paid, requires subscription) - https://www.educative.io/collection/page
 References: 
 https://www.youtube.com/channel/UCKvwPt6BifPP54yzH99ff1g
 https://github.com/kdn251/interviews
+http://leetcode.liangjiateng.cn/leetcode/algorithm
+https://www.cnblogs.com/Asurudo/
 
 
