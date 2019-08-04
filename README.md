@@ -98,8 +98,16 @@ Small algorithm problems
 93.  Remove Outermost Parentheses
 94.  Unique Morse Code Words
 95.  High Five
-
-
+96.  Big Countries
+97.  Sum of Digits in the Minimum Number
+98.  Shortest Distance in a Line
+99.  Flipping an Image
+100. Actors and Directors Who Cooperated At Least Three Times
+101. N-Repeated Element in Size 2N Array
+102. Largest Unique Number
+103. Squares of a Sorted Array
+104. Sales Analysis I
+105. Robot Return to Origin
 
 71.  Word Ladder   ******************************************
 72.  Word Ladder II ******************************************
