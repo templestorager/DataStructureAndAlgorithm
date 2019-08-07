@@ -108,6 +108,14 @@ Small algorithm problems
 103. Squares of a Sorted Array
 104. Sales Analysis I
 105. Robot Return to Origin
+106. Hamming Distance
+107. Permutations
+108. DI String Match
+109. Peak Index in a Mountain Array
+110. Swap Salary
+111. Array Partition I
+112. Unique Email Addresses
+113. Delete Columns to Make Sorted
 
 71.  Word Ladder   ******************************************
 72.  Word Ladder II ******************************************
