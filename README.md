@@ -116,6 +116,10 @@ Small algorithm problems
 111. Array Partition I
 112. Unique Email Addresses
 113. Delete Columns to Make Sorted
+114. Reverse Integer
+115. Palindrome Number
+116. Number of Recent Calls
+117. Height Checker
 
 71.  Word Ladder   ******************************************
 72.  Word Ladder II ******************************************
