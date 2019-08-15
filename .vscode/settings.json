@@ -2,6 +2,9 @@
     "files.associations": {
         "iostream": "cpp",
         "iterator": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "atomic": "cpp",
+        "ios": "cpp",
+        "system_error": "cpp"
     }
 }

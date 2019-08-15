@@ -120,6 +120,23 @@ Small algorithm problems
 115. Palindrome Number
 116. Number of Recent Calls
 117. Height Checker
+118. Nested List Weight Sum
+119. Search in a Binary Search Tree
+120. N-ary Tree Postorder Traversal
+121. Check If a Number Is Majority Element in a Sorted Array
+122. N-ary Tree Preorder Traversal
+123. Find Customer Referee
+124. Article Views I
+125. Customer Placing the Largest Number of Orders
+126. Sort Array By Parity II
+127. Moving Average from Data Stream
+128. Univalued Binary Tree
+129. Relative Sort Array
+130. Fibonacci Number
+131. Subdomain Visit Count
+132. Logger Rate Limiter
+133. Projection Area of 3D Shapes
+
 
 71.  Word Ladder   ******************************************
 72.  Word Ladder II ******************************************
