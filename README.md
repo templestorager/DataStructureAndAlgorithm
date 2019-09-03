@@ -136,6 +136,11 @@ Small algorithm problems
 131. Subdomain Visit Count
 132. Logger Rate Limiter
 133. Projection Area of 3D Shapes
+134. Find Words That Can Be Formed by Characters
+135. Single-Row Keyboard
+
+13. Maximum Depth of N-ary Tree
+
 
 
 71.  Word Ladder   ******************************************
