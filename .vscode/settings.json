@@ -5,6 +5,7 @@
         "string": "cpp",
         "atomic": "cpp",
         "ios": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "algorithm": "cpp"
     }
 }

@@ -138,6 +138,31 @@ Small algorithm problems
 133. Projection Area of 3D Shapes
 134. Find Words That Can Be Formed by Characters
 135. Single-Row Keyboard
+136. Reverse Vowels of a String
+137. Find Common Characters
+138. Available Captures for Rook
+139. Increasing Order Search Tree
+140. Two Sum Less Than K
+141. 3Sum Smaller
+142. 3Sum Closest
+143. Two Sum
+144. Maximum Number of Balloons
+145. K-diff Pairs in an Array
+146. Maximum Subarray
+147. Reorder Data in Log Files
+148. Count Substrings with Only One Distinct Letter
+149. Longest Substring with At Most Two Distinct Characters
+150. Fruit Into Baskets
+151. Longest Substring with At Most K Distinct Characters
+152. Sliding Window Maximum
+153. Most Common Word
+
+
+
+https://www.cnblogs.com/grandyang/p/5420836.html
+sorting: quick sorting, heap sorting radix sorting 
+tree traversal 
+Amazon's questions 
 
 13. Maximum Depth of N-ary Tree
 
