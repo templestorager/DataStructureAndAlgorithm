@@ -9,7 +9,7 @@
 
 // Use hash map 
 class Solution {
-public:
+public: 
     int maxNumberOfBalloons(string text) {
         const string pattern = "balloon";
         int charfrequence[26] = {0};
@@ -26,3 +26,5 @@ public:
         }
     }
 };
+
+

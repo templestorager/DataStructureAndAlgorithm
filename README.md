@@ -156,6 +156,32 @@ Small algorithm problems
 151. Longest Substring with At Most K Distinct Characters
 152. Sliding Window Maximum
 153. Most Common Word
+154. Roman to Integer
+155. Integer to Roman
+156. Intersection of Three Sorted Arrays
+157. Unique Number of Occurrences
+158. Immediate Food Delivery I
+159. How Many Apples Can You Put into the Basket
+160. Integer to English Words
+161. Split Array into Fibonacci Sequence
+162. Delete Node in a Linked List
+163. Longest Word in Dictionary through Deleting
+164. Split a String in Balanced Strings
+165. String Compression
+166. Encode and Decode Strings
+167. Count and Say
+168. Distribute Candies
+169. Minimum Index Sum of Two Lists
+170. Construct Binary Tree from String
+171. Delete and Earn
+172. House Robber
+173. Construct String from Binary Tree
+174. Add Strings
+175. Index Pairs of a String
+
+166. Decode String
+
+16x. Previous Permutation With One Swap
 
 
 
