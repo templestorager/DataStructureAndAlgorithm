@@ -177,6 +177,15 @@ Small algorithm problems
 172. House Robber
 173. Construct String from Binary Tree
 174. Add Strings
+175. Construct Binary Tree from Inorder and Postorder Traversal
+176. Construct Binary Tree from Preorder and Inorder Traversal
+177. Find Duplicate Subtrees
+178. Serialize and Deserialize Binary Tree
+
+
+175. Design In-Memory File System
+
+
 175. Index Pairs of a String
 
 166. Decode String
