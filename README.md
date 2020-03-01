@@ -181,6 +181,7 @@ Small algorithm problems
 176. Construct Binary Tree from Preorder and Inorder Traversal
 177. Find Duplicate Subtrees
 178. Serialize and Deserialize Binary Tree
+179. Swap Adjacent in LR String
 
 
 175. Design In-Memory File System
