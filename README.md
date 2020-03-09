@@ -182,6 +182,11 @@ Small algorithm problems
 177. Find Duplicate Subtrees
 178. Serialize and Deserialize Binary Tree
 179. Swap Adjacent in LR String
+180. Maximum Number of Events That Can Be Attended
+181. Insert Interval
+182. Merge Intervals
+183. Range Module
+184. Minimum Window Substring
 
 
 175. Design In-Memory File System
