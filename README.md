@@ -187,6 +187,8 @@ Small algorithm problems
 182. Merge Intervals
 183. Range Module
 184. Minimum Window Substring
+185. Integer Replacement
+186. Day of the Year
 
 
 175. Design In-Memory File System
