@@ -189,6 +189,15 @@ Small algorithm problems
 184. Minimum Window Substring
 185. Integer Replacement
 186. Day of the Year
+187. Remove Duplicates from Sorted Array
+188. Remove Element
+189. Remove Linked List Elements
+190. Move Zeroes
+191. Longest Common Prefix
+192. Decompress Run-Length Encoded List
+
+
+192. Non-overlapping Intervals
 
 
 175. Design In-Memory File System
