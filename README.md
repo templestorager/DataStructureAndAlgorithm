@@ -195,6 +195,9 @@ Small algorithm problems
 190. Move Zeroes
 191. Longest Common Prefix
 192. Decompress Run-Length Encoded List
+193. 3Sum
+194. 3Sum Cloest
+195. Find Peak Element
 
 
 192. Non-overlapping Intervals
@@ -209,7 +212,7 @@ Small algorithm problems
 
 16x. Previous Permutation With One Swap
 
-
+https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions
 
 https://www.cnblogs.com/grandyang/p/5420836.html
 sorting: quick sorting, heap sorting radix sorting 
