@@ -198,6 +198,9 @@ Small algorithm problems
 193. 3Sum
 194. 3Sum Cloest
 195. Find Peak Element
+196. Find in Mountain Array
+197. Path With Maximum Minimum Value
+198. Symmetric Tree
 
 
 192. Non-overlapping Intervals

@@ -23,28 +23,23 @@
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        if ( !root ) 
-            return levels;
-        levelvisithelper(root,0);
-        return levels;
+        vector<vector<int> > res;
+        if ( !root )
+            return res;
+        LevelOrderHelper(res,root,0);
+        return res;
     }
-
-    void levelvisithelper( TreeNode * node, int level ) 
+    
+    void LevelOrderHelper( vector<vector<int> > &res, TreeNode *node, int level )
     {
-        vector<int> temp;
-        if ( levels.size() == level ) 
-            levels.push_back(temp);
-        levels[level].push_back(node->val);
-        
+        if ( res.size() == level )
+            res.push_back(vector<int>{});
+        res[level].push_back(node->val);
         if ( node->left )
-            levelvisithelper(node->left,level+1);
-        if ( node->right )
-            levelvisithelper(node->right,level+1);
+            LevelOrderHelper(res,node->left,level+1);
+        if ( node->right)
+            LevelOrderHelper(res,node->right,level+1);
     }
-    
-private:
-    vector<vector<int>> levels;
-    
 };
 
 // Iteration 
@@ -52,25 +47,28 @@ private:
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        vector<vector<int>> levels;
-        queue<TreeNode *> q{{root}};
-        vector<int> curlevel;
-        if ( !root ) 
-            return levels;
-        while( !q.empty() ) {
-            curlevel.clear();
-            for ( int i = q.size(); i > 0; i-- ) {
-                TreeNode *t = q.front();
+        vector<int> level;
+        vector<vector<int> > res;
+        queue<TreeNode*> q;
+        if (root)
+            q.push(root);
+        while(!q.empty())
+        {
+            level.clear();
+            queue<TreeNode *> tmp;
+            while(!q.empty())
+            {
+                TreeNode *top = q.front();
+                level.push_back(top->val);
                 q.pop();
-                curlevel.push_back(t->val);
-                if ( t->left ) 
-                    q.push(t->left);
-                if ( t->right )
-                    q.push(t->right);
+                if ( top->left )
+                    tmp.push(top->left);
+                if ( top->right )
+                    tmp.push(top->right);
             }
-            levels.push_back(curlevel);
+            res.push_back(level);
+            q = tmp;
         }
-        return levels;   
+        return res;
     }
-    
 };
