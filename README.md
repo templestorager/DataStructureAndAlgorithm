@@ -201,6 +201,10 @@ Small algorithm problems
 196. Find in Mountain Array
 197. Path With Maximum Minimum Value
 198. Symmetric Tree
+199. Find First and Last Position of Element in Sorted Array
+200. First Bad Version
+201. Add Two Numbers II
+202. Plus One Linked List
 
 
 192. Non-overlapping Intervals
