@@ -205,6 +205,16 @@ Small algorithm problems
 200. First Bad Version
 201. Add Two Numbers II
 202. Plus One Linked List
+203. Plus One
+204. Reorder List
+205. Add Binary
+206. Add to Array-Form of Integer
+207. Happy Number 
+208. Search Insert Position
+209. Number of Steps to Reduce a Number to Zero
+
+210. SquareRoot
+
 
 
 192. Non-overlapping Intervals

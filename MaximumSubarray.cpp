@@ -13,7 +13,7 @@
 *
 */
 
-// The key idea is the when we check a number, the accumulative could be more than itself or less than 
+// The key idea is when we check a number, the accumulative could be more than itself or less than 
 // itself. Therefore, we know the local maximum is max of the accumulative sum so far or the number itself 
 // i.e., we started a new subarray 
 // O(n), O(1)

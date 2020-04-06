@@ -153,3 +153,40 @@ public:
         return head;
     }
 };
+
+// Idea: use stack to faciliate finding the first non-nine. 
+class Solution {
+public:
+    ListNode* plusOne(ListNode* head) {
+        stack<ListNode*> s;
+        if ( !head ) 
+            return head;
+        ListNode *walk = head;
+        while( walk )
+        {
+            s.push(walk);
+            walk = walk->next;
+        }
+        
+        while ( !s.empty() )
+        {
+            ListNode *top = s.top();
+            s.pop();
+            if ( top->val == 9 )
+            {
+                top->val = 0;
+            }
+            else 
+            {
+                top->val++;
+                return head;
+            }
+        }
+
+        ListNode *last_carry = new ListNode(1);
+        last_carry->next = head;
+        head = last_carry;
+
+        return head;
+    }
+};

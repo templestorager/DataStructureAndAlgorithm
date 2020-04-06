@@ -60,3 +60,20 @@ public:
     }
 };
 
+// if a number appears twice, then it's xor would remove the 1s it had contributed to the result
+// meaning we can use only once and twice to represent all the cases 
+// So: 
+// For once: an incoming number would offset any number which has alreay appeared once 
+// For twice: an incoming number renders out which have already appreached twice 
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int once = 0, twice = 0; 
+        for ( auto num : nums )
+        {
+            once  = ~twice & ( once ^ num );    // not in the twice but in the once minus the number itself if it was in the once (i.e., it now becomes twice or three times, in both cases it should be gone)
+            twice = ~once & ( twice ^ num );    // similarly, not in the once but in the twice minus the number itself it was in the twice(i.e., it becomes three times )
+        }
+        return once;
+    }
+};
