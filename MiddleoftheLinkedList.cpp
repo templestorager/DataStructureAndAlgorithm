@@ -1,0 +1,81 @@
+// Problem Description 
+/*
+ Given a non-empty, singly linked list with head node head, return a middle node of linked list.
+
+If there are two middle nodes, return the second middle node.
+
+ 
+
+Example 1:
+
+Input: [1,2,3,4,5]
+Output: Node 3 from this list (Serialization: [3,4,5])
+The returned node has value 3.  (The judge's serialization of this node is [3,4,5]).
+Note that we returned a ListNode object ans, such that:
+ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, and ans.next.next.next = NULL.
+Example 2:
+
+Input: [1,2,3,4,5,6]
+Output: Node 4 from this list (Serialization: [4,5,6])
+Since the list has two middle nodes with values 3 and 4, we return the second one.
+ 
+
+Note:
+
+The number of nodes in the given list will be between 1 and 100.
+ */
+
+// Idea: we can first calculate the number of nodes on the list and then traverse half of them 
+// to obatin the middle node. 
+// Note: consider serveral special cases to determine the bounds 
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        int nodes = 0;
+        ListNode *tmp1 = head, *tmp2 = head;
+        while ( tmp1 )
+        {
+            nodes++;
+            tmp1 = tmp1->next;
+        }
+        bool even = nodes % 2 == 0;
+        if ( nodes <= 1 )
+            return head;
+        for ( int i = 0; i < nodes / 2 - 1; i++ )
+        {
+            tmp2 = tmp2->next;
+        }
+        return tmp2->next;
+    }
+};
+
+// This method temporarily stores nodes in an array and directly returns the middle node
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode * Arr[100]; 
+        int i = 0;
+        while ( head )
+        {
+            Arr[i++] = head;
+            head = head->next;
+        }
+        
+        return Arr[i/2];
+    }
+};
+
+// This method uses the two pointer method, then when it stops, the slow points the middle node
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode *slow = head, *fast = head;
+        while ( slow && fast && fast->next )
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        
+        return slow;
+    }
+};

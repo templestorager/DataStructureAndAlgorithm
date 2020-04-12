@@ -52,3 +52,20 @@ public:
         return maxprofit;
     }
 };
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int maxprofit = 0, minprice = INT_MAX;
+        for ( auto p : prices )
+        {
+            if ( p < minprice )
+            {
+                minprice = p;
+            }
+            maxprofit = max(maxprofit,p-minprice);
+        }
+        
+        return maxprofit;
+    }
+};

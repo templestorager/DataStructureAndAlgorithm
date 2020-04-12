@@ -212,10 +212,24 @@ Small algorithm problems
 207. Happy Number 
 208. Search Insert Position
 209. Number of Steps to Reduce a Number to Zero
+210. Counting Elements
+211. Number of 1 Bits
+212. Buddy Strings
+213. Middle of the Linked List
+214. Convert Binary Number in a Linked List to Integer
+215. Binary Watch
+216. Combaniations
+217. Backspace String Compare
+218. Letter Case Permutation
+219. Valid Palindrome
+219. Valid Palindrome II
+220. Diameter of Binary Tree
 
 210. SquareRoot
 
 
+
+// The buddy memory system 
 
 192. Non-overlapping Intervals
 

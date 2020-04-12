@@ -60,7 +60,6 @@ public:
         dfs(res,tempres,curidx+1,nums);
         tempres.pop_back();
         dfs(res,tempres,curidx+1,nums);
-        
     }
 };
 
@@ -86,6 +85,30 @@ public:
             }
             res.push_back(tempres);
         }
+        return res;
+    }
+};
+
+
+class Solution {
+public:
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int> > res;
+        vector<int> subset; 
+        int maxval = 1 << nums.size();
+        for ( int val = 0; val < maxval; val++ )
+        {
+            subset.clear();
+            for ( int idx = 0; idx < nums.size(); idx++ )
+            {
+                if ( val & (1<<idx) )
+                {
+                    subset.push_back(nums[idx]);
+                }
+            }
+            res.push_back(subset);
+        }
+        
         return res;
     }
 };
