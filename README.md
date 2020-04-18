@@ -224,6 +224,8 @@ Small algorithm problems
 219. Valid Palindrome
 219. Valid Palindrome II
 220. Diameter of Binary Tree
+221. Sort Colors
+222. Last Stone Weight
 
 210. SquareRoot
 
