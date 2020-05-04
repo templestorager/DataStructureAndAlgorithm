@@ -226,6 +226,10 @@ Small algorithm problems
 220. Diameter of Binary Tree
 221. Sort Colors
 222. Last Stone Weight
+223. Contiguous Array
+224. Valid Square
+225. Kids With the Greatest Number of Candies
+226. Minimum Moves to Equal Array Elements II
 
 210. SquareRoot
 
