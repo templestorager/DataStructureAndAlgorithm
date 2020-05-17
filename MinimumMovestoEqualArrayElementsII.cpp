@@ -97,3 +97,90 @@ public:
         return res;
     }
 };
+
+// There is some math proof demonstrating that the median of the sorted array is the final value which minimizes 
+// the moves, because the median is the only value which satisfies the derivative of the funtion respresenting the sums of before 
+// elements and after elements being equal. 
+// O(nlogn), O(1)
+class Solution {
+public:
+    int minMoves2(vector<int>& nums) {
+        long res; 
+        sort( nums.begin(), nums.end() );
+        for ( int i = 0; i < nums.size(); i++ )
+        {
+            res += abs(nums[i]-nums[nums.size()/2]);
+        }
+        
+        return res;
+    }
+};
+
+// This following method is kind of tricky and does not require to know the median at all. 
+// In a sorted array, assume the final value is val, then the moves of max is (max-val) and 
+// the moves of min is (val-min). So the total moves of max and min is (max-val)+(val-min) 
+// = max - min, regardless of the value. Therefore, we can progress to shrink the range 
+// O(nlogn), O(1)
+class Solution {
+public:
+    int minMoves2(vector<int>& nums) {
+        int l = 0, r = nums.size() - 1;
+        int res = 0;
+        sort( nums.begin(), nums.end() );
+        while ( l < r )
+        {
+            res += nums[r] - nums[l];
+            l++;
+            r--;
+        }
+        
+        return res;
+    }
+};
+
+// The following method uses the quick-sort idea to find the median whose rank is size()/2
+// bringing down the complexity from O(nlogn) to O(n) on average. 
+// But the quick-find could increase to O(n^2) in the worst case 
+class Solution {
+public:
+    int minMoves2(vector<int>& nums) {
+        int sum = 0;
+        int median = select_rank_num( nums, 0, nums.size()-1,nums.size()/2);
+        for ( auto num : nums )
+            sum += abs(median - num);
+        return sum;
+    }
+    
+    int select_rank_num( vector<int> &data, int l, int r, int k)
+    {
+        if ( l == r )
+            return data[l];
+        int pivotidx = partition(data,l,r);
+        if ( pivotidx == k )
+        {
+            return data[k];
+        }
+        else if ( k < pivotidx )
+        {
+            return select_rank_num(data,l,pivotidx-1,k);
+        } else {
+            return select_rank_num(data,pivotidx+1,r,k);
+        }
+    }
+    
+    int partition( vector<int> &data, int l, int r )
+    {
+        int pivot = data[r];
+        int i = l - 1;
+        for ( int j = l; j < r; j++ )
+        {
+            if ( data[j] <= pivot )
+            {
+                swap(data[j],data[i+1]);
+                i++;
+            }
+        }
+        swap(data[i+1],data[r]);
+        return i+1;
+    }
+};

@@ -22,6 +22,9 @@
  */
 
 // hint: check the overflow 
+// Need to know the range of an integer
+// Value of INT_MAX is +2147483647.
+// Value of INT_MIN is -2147483648.
 class Solution {
 public:
     int reverse(int x) {
@@ -37,5 +40,22 @@ public:
         }
         
         return rev;
+    }
+};
+
+// Trickily we can avoid the overflow checking by using a long type 
+class Solution {
+public:
+    int reverse(int x) {
+        long sum = 0;
+        while ( x )
+        {
+            sum = sum * 10 + x % 10;
+            x /= 10;
+            if ( sum > INT_MAX || sum < INT_MIN )
+                return 0;
+        }
+        
+        return (int) sum;
     }
 };

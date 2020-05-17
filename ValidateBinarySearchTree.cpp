@@ -34,7 +34,7 @@ Both the left and right subtrees must also be binary search trees.
 
 // It's kind of tricky to verify a valid BST. 
 // Locally each node is larger than it's left child and smaller than right child is only a necessary condition 
-// of it being a BST. We also need to ensure the value is larget than the max of the left child and smaller than 
+// of it being a BST. We also need to ensure the value is larger than the max of the left child and smaller than 
 // the min of the right child. To implement that, we keep track of the range that each node should fall into 
 // Note: we use long type to avoid coner case overflow 
 class Solution {

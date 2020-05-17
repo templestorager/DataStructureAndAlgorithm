@@ -230,6 +230,7 @@ Small algorithm problems
 224. Valid Square
 225. Kids With the Greatest Number of Candies
 226. Minimum Moves to Equal Array Elements II
+227. Can I Win
 
 210. SquareRoot
 
