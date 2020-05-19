@@ -19,7 +19,7 @@
 */ 
 
 // Idea: 
-// The first element in the preorder is the right and the following element is the root of its left subtree 
+// The first element in the preorder is the root and the following element is the root of its left subtree 
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {

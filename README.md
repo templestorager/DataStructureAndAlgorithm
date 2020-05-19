@@ -242,6 +242,8 @@ Small algorithm problems
 236. Longest Common Subsequence
 237. One Edit Distance
 238. Edit Distance
+239. Course Schedule
+240. Next Greater Element I
 
 210. SquareRoot
 

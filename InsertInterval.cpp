@@ -17,7 +17,7 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
 */
 
 // This solution uses a temporary storage while examining each of the existing intervals. 
-// The key is to construct a new interval (could be alone, or as a result of overlapping) and remember the post for it to be inserted
+// The key is to construct a new interval (could be alone, or as a result of overlapping) and remember the position for it to be inserted
 
 class Solution {
 public:
