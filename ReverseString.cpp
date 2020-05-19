@@ -43,3 +43,14 @@ public:
         reverse(s.begin(),s.end());
     }
 };
+
+// C-language version 
+void reverseString(char* s, int sSize){
+    char *end = &s[sSize-1];
+    while( s < end )
+    {
+        char tmp = *s;
+        *s++ = *end;
+        *end-- = tmp;
+    }
+}

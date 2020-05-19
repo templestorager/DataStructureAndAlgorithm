@@ -231,6 +231,17 @@ Small algorithm problems
 225. Kids With the Greatest Number of Candies
 226. Minimum Moves to Equal Array Elements II
 227. Can I Win
+228. Find Minimum Rotated Sorted Array
+229. Find Minimum Rotated Sorted Array II
+230. Remove Nth Node from End of List
+231. Search in Rotated Sorted Array 
+232. Search in Rotated Sorted Array II
+233. Valid Tic-Tac-Toe State
+234. Design Tic-Tac-Toe
+235. Target Sum
+236. Longest Common Subsequence
+237. One Edit Distance
+238. Edit Distance
 
 210. SquareRoot
 
