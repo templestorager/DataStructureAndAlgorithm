@@ -84,3 +84,40 @@ public:
         }
     }
 };
+
+// This is a follow-up question which sort k colors 
+class Solution {
+public:
+    /**
+     * @param colors: A list of integer
+     * @param k: An integer
+     * @return: nothing
+     */
+    void sortColors2(vector<int> &colors, int k) {
+        // write your code here   
+        int lcolor = 1, highcolor = k;
+        int sorted_last_pos = 0;
+        int low_pos_unsorted = sorted_last_pos, high_pos_unsorted = colors.size() - 1; 
+        while ( lcolor <= highcolor )
+        {
+            while( low_pos_unsorted <= high_pos_unsorted )
+            {
+                if ( colors[low_pos_unsorted] == lcolor )
+                {
+                    swap(colors[sorted_last_pos++],colors[low_pos_unsorted++]);
+                }
+                else if ( colors[low_pos_unsorted] == highcolor )
+                {
+                    swap ( colors[low_pos_unsorted],colors[high_pos_unsorted--] );
+                }
+                else 
+                {
+                    low_pos_unsorted++;
+                }
+            }
+            low_pos_unsorted = sorted_last_pos - 1;
+            lcolor++;
+            highcolor--;
+        }
+    }
+};

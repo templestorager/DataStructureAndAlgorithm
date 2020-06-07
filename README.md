@@ -244,12 +244,36 @@ Small algorithm problems
 238. Edit Distance
 239. Course Schedule
 240. Next Greater Element I
+241. Inorder Successor in BST
+242. Remove Invalid Parentheses[301,Hard]
+243. Minimum Remove to Make Valid Parentheses[1249,Medium]
+244. Binary Tree Zigzag Level Order Traversal[103,Medium]
+245. Find the Celebrity[277,Medium]
+245. Next Closest Time[681,Medium]
+246. Valid Square[593, Medium]
+247. Minimum Swaps to Make Strings Equal[1247, Medium]
+248. LRU Cache[146, Medium]
+249. LFU Cache[460,Hard]
+250. Populating Next Right Pointers in Each Node
+251. Populating Next Right Pointers in Each Node II
+
+
+
+
+
+242. Recover Binary Search Tree
+243. Max Stack
+244. Map Sum Pairs
 
 210. SquareRoot
 
-
+https://leetcode.com/articles/recover-binary-search-tree/
+677. Map Sum Pairs
+https://www.cnblogs.com/grandyang/p/7616525.html
+https://leetcode.com/problems/max-stack/
 
 // The buddy memory system 
+// Tries data structure: handling prefixes 
 
 192. Non-overlapping Intervals
 
