@@ -256,7 +256,39 @@ Small algorithm problems
 249. LFU Cache[460,Hard]
 250. Populating Next Right Pointers in Each Node
 251. Populating Next Right Pointers in Each Node II
-
+252. Repeated DNA Sequences[187,Medium]
+253. Longest Duplicate Substring[1044, Hard]
+254. Longest Repeating Substring[1062, Medium]
+232. Power of Two
+233. Two Sum III - Data structure design
+234. Sort Characters By Frequency
+235. Two Sum IV Input is a BST
+236. Two Sum BSTs
+237. Binary Search Tree to Greater Sum Tree
+238. Balance a Binary Search Tree
+239. Maximum Sum BST in Binary Tree
+240. Insert Delete GetRandom O(1) [380,Medium]
+241. Binary Search Tree Iterator [173,Medium]
+242. Longest Substring Without Repeating Characters
+243. Compare Version Numbers[165,Medium]
+244. Product of Array Except Self[238,Medium]
+245. Maximum Product Subarray
+246. Most Common Word
+247. Rectangle Overlap
+248. Rectangle Area
+249. Find K Closest Elements
+250. Minimum Number of Days to Make m Bouquets
+251. Sum of Mutated Array Closest to Target
+252. Course Schedule II
+253. Median of Two Sorted Arrays
+254. Binary Tree Maximum Path Sum
+255. Longest Continuous Increasing Subsequence
+256. Reverse Nodes in k-Group
+257. Flood Fill
+258. Binary Tree Inorder Traversal
+259. Binary Tree Preorder Traversal
+260. Binary Tree Postorder Traversal
+261. Inorder Successor in BST II
 
 
 

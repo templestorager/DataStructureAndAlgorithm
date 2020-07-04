@@ -6,12 +6,18 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
+                "-std=c++14"
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "/usr/bin"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         }
     ],

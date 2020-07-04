@@ -85,3 +85,68 @@ public:
         return dummy.next;
     }
 };
+
+// We can put all data in an array and sort, and then put them back in a linked list
+// O(n), O(n)
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        vector<int> data; 
+        for ( int i = 0; i < lists.size(); i++ )
+        {   
+            ListNode *cur = lists[i];
+            while ( cur )
+            {
+                data.push_back( cur->val );
+                cur = cur->next;
+            }
+        }
+        
+        sort( data.begin(), data.end() );
+        ListNode dummy(-1), *tail = &dummy;
+        for ( auto d : data )
+        {
+            ListNode *tmp = new ListNode(d);
+            tail->next = tmp;
+            tail = tail->next;
+        }
+        
+        return dummy.next;
+    }
+};
+
+// Could use count-sorting like algorithm 
+// The potential drawback is that it requires dynamic memory allocation
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        ListNode dummy(-1), *tail = &dummy;
+        int mx = INT_MIN, mn = INT_MAX;
+        unordered_map<int,int> m;
+        for ( auto node : lists )
+        {
+            ListNode *t = node;
+            while ( t )
+            {
+                mx = max(mx,t->val);
+                mn = min(mn,t->val);
+                m[t->val]++;
+                t = t->next;
+            }
+        }
+        
+        for ( int num = mn; num <= mx; num++ )
+        {
+            if ( !m[num] )
+                continue;
+            for ( int i = 0; i < m[num]; i++ )
+            {
+                ListNode *tmp = new ListNode(num);
+                tail->next = tmp;
+                tail = tail->next;
+            }
+        }
+        
+        return dummy.next;
+    }
+};

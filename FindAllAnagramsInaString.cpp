@@ -140,3 +140,65 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        if ( s.size() < p.size() )
+            return {};
+        vector<int> res;
+        int m[26] = {0};
+        int plen = p.length();
+        int slen = s.length();
+        for ( int i = 0; i < plen; i++ )
+            m[p[i]-'a']++;
+        for ( int j = 0; j <= slen - plen; j++ )
+            if ( IsAnagram(s.substr(j,plen),m) )
+                res.push_back(j);
+        
+        return res;
+    }
+    
+    bool IsAnagrams( string str, const int m[26] )
+    {
+        int count[26];
+        memcpy( count, m, sizeof(m) );
+        for ( int i = 0; i < str.size(); i++ )
+        {
+            if ( --count[str[i]-'a'] < 0 );
+                return false;
+        }
+        
+        return true;
+    }
+};
+
+// Generally for this pattern search problem, we can use sliding window approach to scoping into the 
+// the substrings in the s string and then compare it with the pattern. 
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        int pcount[26] = {0};
+        int scount[26] = {0};
+        vector<int> res;
+        int slen = s.length(), plen = p.length();
+        for ( int i = 0; i < plen; i++ )
+            pcount[p[i]-'a']++;
+        for ( int i = 0; i < slen; i++ )
+        {
+            scount[s[i]-'a']++;
+            // if we have moved in one more char on the right side, we need to move out the left-most char 
+            if ( i >= plen )
+            {
+                scount[s[i-plen]-'a']--;
+            }
+            // if we have the exact number of the chars, it's time to make a comparision 
+            if ( i >= plen - 1 && !memcmp(scount,pcount,sizeof(pcount)) )
+            {
+                res.push_back( i - plen + 1 );
+            }
+        }
+        
+        return res;
+    }
+};

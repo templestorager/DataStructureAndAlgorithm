@@ -29,3 +29,38 @@ The input prerequisites is a graph represented by a list of edges, not adjacency
 You may assume that there are no duplicate edges in the input prerequisites.
 1 <= numCourses <= 10^5
 */
+
+class Solution {
+public:
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<vector<int> > g(numCourses,vector<int>{});
+        vector<int> indegree(numCourses,0);
+        for ( auto e : prerequisites )
+        {
+            g[e[1]].push_back(e[0]);
+            indegree[e[0]]++;
+        }
+        
+        queue<int> q;
+        for ( int i = 0; i < numCourses; i++ )
+        {
+            if ( indegree[i] == 0 )
+                q.push(i);
+        }
+        
+        while ( !q.empty() )
+        {
+            int course = q.front();
+            q.pop();
+            for ( auto n : g[course] )
+            {
+                if ( --indegree[n] == 0 )
+                    q.push(n);   
+            }
+        }
+        
+        if ( accumulate(indegree.begin(),indegree.end(),0) )
+            return false;
+        return true;
+    }
+};

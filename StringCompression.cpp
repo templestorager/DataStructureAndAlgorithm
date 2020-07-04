@@ -55,7 +55,7 @@
  * 
  */
 
-// double pointer to walk through the chars 
+// double pointers to walk through the chars 
 class Solution {
 public:
     int compress(vector<char>& chars) {

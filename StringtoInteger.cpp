@@ -34,6 +34,5 @@ public:
             }
             base = 10 * base + (str[i++] - '0'); // Note: this "()" is mandatory, otherwise it will cuase overflow
         }
-        return base * sign;
     }
 };

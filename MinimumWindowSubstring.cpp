@@ -14,7 +14,7 @@ If there is such window, you are guaranteed that there will always be only one u
 
 // this method maintains the status of the chars in a sliding window
 // when the sliding window contains all the characters in string t, we need to try to 
-// strip off the begining characters which are no in the string t. 
+// strip off the begining characters which are not in the string t. 
 
 class Solution {
 public:

@@ -106,7 +106,7 @@ public:
 // init an array [1...k, n+1]
 // check the array starting from the begining, if the current is consecutive to the next, then reset its value to 
 // to its rank (i.e., position idx plus one)
-// otherwise in creases the value by one and continue to the next loop
+// otherwise increases the value by one and continue to the next loop
 // for example: n = 4, k = 2;
 // [1,2,5]  -- > [1,2]
 // [1,3,5]  -- > [1,3]

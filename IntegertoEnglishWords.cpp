@@ -60,3 +60,36 @@ public:
         return res;
     }
 };
+
+
+class Solution {
+public:
+    string numberToWords(int num) {
+        string res = HandleThreeDigits( num % 1000 );
+        vector<string> HighUnit{"Thousand","Million","Billion"};
+        int idx = 0;
+        while ( num /= 1000 )
+        {
+            res = num % 1000 ? HandleThreeDigits(num % 1000) + " " + HighUnit[idx] + " " + res : res;
+            idx++;
+        }
+        while ( !res.empty() && res.back() == ' ' )x
+            res.pop_back();
+        return res;
+    }
+    
+    string HandleThreeDigits( int num )
+    {
+        vector<string> lessthan20{"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
+        vector<string> Twentytohundred{"","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
+        string res;
+        int hundred = num/100, tens = num % 100, ones = num % 10;
+        res = tens < 20 ? lessthan20[tens] : Twentytohundred[tens/10] + (ones ? " " + lessthan20[tens%10] : "");
+        if ( hundred > 0 )
+        {
+            res = lessthan20[hundred] + " Hundred" + " " + res;                                                   return res;            
+        }
+                                                                         
+        return res;
+    }
+};

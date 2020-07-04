@@ -15,7 +15,7 @@ random_index: the index of the node (range from 0 to n-1) where random pointer p
 // In the first traversal, we just traverse it following the next pointer without considering the random pointer, so it's just copy a singly linked list
 // for each node, we create a new node containing the same value. In order to correctly reestablish the random pointer relationship 
 // we need to maintain the one-on-one relationship between the old node and the newly created node. 
-// In the second traversal, we establish the random pointer relation ship using the mapping. 
+// In the second traversal, we establish the random pointer relationship using the mapping. 
 class Solution {
 public:
     Node* copyRandomList(Node* head) {

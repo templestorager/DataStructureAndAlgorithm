@@ -102,3 +102,44 @@ public:
             return succ;
         }
 };
+
+// This is the recursive version of the above solution 
+class Solution {
+public:
+    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) {
+        if ( !root )
+            return nullptr;
+        if ( root->val <= p->val )
+            return inorderSuccessor(root->right,p);
+        else 
+        {
+            TreeNode *left = inorderSuccessor(root->left, p);
+            return left ? left : root;
+        }
+    }
+};
+
+// This solution uses recursive inorder traversal to find the successor. 
+// while recursing, it records the prev and if at any point time, if the 
+// prev is set (i.e., each to p), then the current node is the succ of p
+class Solution {
+public:
+    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) {
+        if ( !root )
+            return nullptr;
+        inorder(root,p);
+        return succ;
+    }
+    void inorder(TreeNode *root, TreeNode *p )
+    {
+        if ( !root )
+            return;
+        inorder(root->left,p);
+        if ( pre == p ) 
+            succ = root;
+        pre = root;
+        inorder(root->right,p);      
+    }
+private:
+    TreeNode *pre = nullptr, *succ = nullptr;
+};
