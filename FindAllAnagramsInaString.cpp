@@ -202,3 +202,81 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        vector<int> res;
+        int i; 
+        int plen = p.size(), slen = s.size();
+        if ( plen > slen || slen == 0  )
+            return {};
+        int pcount[26] = {0}, scount_win[26] = {0}; 
+        for ( i = 0; i < plen; i++ )
+        {
+            pcount[p[i]-'a']++;
+            scount_win[s[i]-'a']++;
+        }
+        
+        while ( i <= slen )
+        {
+            if ( memcmp(pcount,scount_win,sizeof(pcount)) == 0 )
+                res.push_back(i-plen);
+            scount_win[s[i-plen]-'a']--;
+            if ( i < slen )
+                scount_win[s[i]-'a']++;
+            i++;
+        }
+        
+        return res;
+    }
+};
+
+
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        vector<int> res, m(256,0);
+        int slen = s.size(), plen = p.size(), left = 0, right = 0, rem_cnt = plen;
+        if ( plen < slen || slen == 0 )
+            return {};
+        for ( char a : p )
+            m[a]++;
+        while ( right < slen )
+        {
+            if ( m[s[right++]]-- >= 1 )
+                rem_cnt--;
+            if ( rem_cnt == 0 )
+                res.push_back(left);
+            if ( right - left == plen && m[s[left++]]++ >= 0 )
+                //if ( m[s[left++]]++ >= 0 )
+                    rem_cnt++;
+        }
+        
+        return res;
+    }
+};
+
+
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        int slen = s.size(), plen = p.size(), left = 0, right = 0, rem_cnt = plen;
+        vector<int> res, m(256,0);
+        if ( plen > slen || slen == 0 )
+            return {};
+        for ( auto c : p )
+            m[c]++;
+        while ( right < slen )
+        {
+            if ( m[s[right++]]-- > 0 )
+                rem_cnt--;
+            if ( rem_cnt == 0 )
+                res.push_back(left);
+            if ( right-left == plen && m[s[left++]]++ >= 0 )
+                rem_cnt++;
+        }
+        
+        return res;
+    }
+};

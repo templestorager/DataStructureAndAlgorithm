@@ -82,6 +82,37 @@ public:
     }
 };
 
+// The same idea of expanding around center, but doesn't use function calls 
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        int maxlen = 0, start = 0, n = s.size();
+        if ( n < 2 )
+            return s;
+        for ( int i = 0; i < n;)
+        {
+            if ( n-i <= maxlen / 2 )
+                break;
+            int l = i, r = i;
+            while ( r < n - 1 && s[r+1] == s[r] ) 
+                r++;
+            i = r + 1;
+            while ( r < n - 1 && l > 0 && s[r+1] == s[l-1] )
+            {
+                r++;
+                l--;
+            }
+            if ( maxlen < r - l + 1 )
+            {
+                maxlen = r - l + 1;
+                start = l;
+            }
+        }
+        
+        return s.substr(start, maxlen);
+    }
+};
+
 // This solution uses the Manacher's algorithm 
 
 // https://www.hackerrank.com/topics/manachers-algorithm

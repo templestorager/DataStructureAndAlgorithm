@@ -30,15 +30,12 @@ public:
         int sum = 0;
         for ( it = m.begin(); it != m.end(); it++ )
         {
-            if ( IsPrefix(prefix,it->first) )
+            if ( it->first.substr(0,prefix.size()) == prefix )
                 sum += it->second;
         }
         return sum;
     }
 private: 
     unordered_map<string, int> m;
-    bool IsPrefix( const string prefix, const string &str )
-    {
-        return str.substr(0,prefix.length()) == prefix;
-    }
 };
+

@@ -95,3 +95,60 @@ public:
         return false;
     }
 };
+
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& wordDict) {
+        unordered_set<string> dict(wordDict.begin(),wordDict.end());
+        if ( s.empty() )
+            return true;
+        bool visited[s.size()]; 
+        memset(visited,false,sizeof(visited));
+        queue<int> q{{0}};
+        while ( !q.empty() )
+        {
+            char cur = q.front();
+            q.pop();
+            if ( !visited[cur] )
+            {
+                for ( int i = cur+1; i <= s.size(); i++ )
+                {
+                    if ( dict.count(s.substr(cur,i-cur)) )
+                    {
+                        q.push(i);
+                        if ( i == s.size() )
+                            return true;
+                    }
+                }
+                visited[cur] = 1;
+            }        
+        }
+        
+        return false;
+    }
+};
+
+
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& wordDict) {
+        if ( s.empty() ) 
+            return true;
+        int dp[s.size()+1];
+        unordered_set<string> dict(wordDict.begin(),wordDict.end());
+        dp[0] = 1;
+        for ( int i = 0; i <= s.size(); i++ )
+        {
+            for ( int j = 0; j < i; j++ )
+            {
+                if ( dp[j] && dict.count(s.substr(j,i-j)) )
+                {
+                    dp[i] = 1;
+                    break;
+                }
+            }
+        }
+        
+        return dp[s.size()] == 1; 
+    }
+};

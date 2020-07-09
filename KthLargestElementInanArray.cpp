@@ -81,5 +81,4 @@ public:
         }
         swap(nums[left],nums[r]);
         return r;
-    }
 };

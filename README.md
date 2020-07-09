@@ -289,7 +289,26 @@ Small algorithm problems
 259. Binary Tree Preorder Traversal
 260. Binary Tree Postorder Traversal
 261. Inorder Successor in BST II
-
+262. Cut Off Trees for Golf Event
+263. Generate Parentheses
+264. Word Search
+265. Word Search II
+266. Implement Trie (Prefix Tree)
+267. Replace Words
+268. Meeting Rooms
+269. Meeting Rooms II
+270. Top K Frequent Elements
+271. K Closest Points to Origin
+272. Top K Frequent Words
+273. Longest Palindrome
+274. Longest Palindromic Subsequence
+275. Reverse Linked List II
+276. Insert into a Sorted Circular Linked List
+277. Insertion Sort List
+278. Intersection of Two Arrays
+279. Intersection of Two Arrays II
+280. Coin Change
+281. Shortest Bridge
 
 
 
