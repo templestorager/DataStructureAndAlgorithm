@@ -309,6 +309,14 @@ Small algorithm problems
 279. Intersection of Two Arrays II
 280. Coin Change
 281. Shortest Bridge
+282. Reverse Bits
+283. Burst Balloons
+284. Arithmetic Slices
+285. Arithmetic Slices II - Subsequence
+286. Reordered Power of 2
+287. Employee Free Time
+288. Missing Element in Sorted Array
+289. Maximum Depth of N-ary Tree
 
 
 

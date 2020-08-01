@@ -71,7 +71,7 @@ public:
 };
 
 // This solution leverages the fact that adding a number to generate a permute would have n+1 possibility 
-// which n is the current number of permution. 
+// where n is the current number of permution. 
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
